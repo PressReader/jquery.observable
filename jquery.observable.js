@@ -21,7 +21,7 @@
  * 
  */
 
-(function($) {
+var def = function($) {
 	"use strict";
 	
 	var getEventListeners = function( data, event ) {
@@ -292,4 +292,12 @@
 		return rawData;
 	};
 	
-})(jQuery);
+};
+
+// Register as a named AMD module, since jQuery can be concatenated with other
+if (typeof define === "function" && define.amd) {
+	define("jquery.observable", ['jquery'], def);
+} else {
+	def(jQuery);
+}
+
