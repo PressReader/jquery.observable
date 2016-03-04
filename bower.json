@@ -1,0 +1,24 @@
+{
+  "name": "jquery.observable",
+  "homepage": "https://github.com/PressReader/jquery.observable",
+  "authors": [
+    "Bence Erős (ebence88@gmail.com)"
+  ],
+  "description": "A plugin that changes a data structure built from plain JS objects into an observable structure with jQuery-style accessors and event listeners.",
+  "main": "jquery.observable.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "jquery",
+    "jquery.observable"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
